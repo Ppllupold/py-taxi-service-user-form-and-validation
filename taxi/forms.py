@@ -1,9 +1,8 @@
-from django import forms
 from django.contrib.auth import get_user_model
 from django.contrib.auth.forms import UserCreationForm
-
 from taxi.mixins import LicenseNumberValidationMixin
 from taxi.models import Driver, Car
+from django import forms
 
 
 class DriverCreationForm(LicenseNumberValidationMixin, UserCreationForm):
